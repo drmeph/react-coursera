@@ -1,0 +1,24 @@
+{
+  "name": "react-coursera",
+  "version": "1.0.0",
+  "description": "\"This is a react course on coursera\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drmeph/react-coursera.git"
+  },
+  "keywords": [
+    "react",
+    "nodejs",
+    "npm"
+  ],
+  "author": "Kevin Dorfer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drmeph/react-coursera/issues"
+  },
+  "homepage": "https://github.com/drmeph/react-coursera#readme"
+}
