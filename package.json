@@ -26,5 +26,8 @@
   "devDependencies": {
     "lite-server": "^2.5.4",
     "minimist": ">=1.2.3"
+  },
+  "dependencies": {
+    "create-react-app": "^3.4.1"
   }
 }
