@@ -26,7 +26,8 @@ class DishDetail extends Component {
             return (
                 <ul key={item.id} className="list-unstyled">
                     <li>{item.text}</li>
-                    <li>-- {item.author}, {item.date}</li>
+                    <li>-- {item.author}, {new Intl.DateTimeFormat('en-US',
+                        { year: 'numeric', month: 'short', day:'2-digit'}).format(new Date(Date.parse(item.date)))}</li>
                 </ul>
             );
         })
@@ -51,9 +52,11 @@ class DishDetail extends Component {
 
         if (dish != null) {
             return (
-                <div className="row">
-                    {this.renderDish(dish)}
-                    {this.renderComment(dish.comments)}
+                <div className="container">
+                    <div className="row">
+                        {this.renderDish(dish)}
+                        {this.renderComment(dish.comments)}
+                    </div>
                 </div>
             );
         } else {
