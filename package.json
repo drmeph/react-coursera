@@ -29,6 +29,7 @@
   "dependencies": {
     "create-react-app": "^3.4.1",
     "react-redux": "^7.2.0",
+    "react-redux-form": "^1.16.14",
     "redux": "^4.0.5"
   }
 }
