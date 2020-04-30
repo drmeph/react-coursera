@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Breadcrumb,BreadcrumbItem, Button, Label, Col} from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, Button, Label, Col, Row} from 'reactstrap';
 import { Link } from "react-router-dom";
-import { Control, LocalForm, Errors, Row } from "react-redux-form";
+import { Control, LocalForm, Errors } from "react-redux-form";
 
 class Contact extends Component {
 
@@ -90,11 +90,11 @@ class Contact extends Component {
                                 <Col md={10}>
                                     <Control.text model=".email" id="email" name="email"
                                                   placeholder="Email"
-                                                  className="form-control"/>
+                                                  className="form-control" />
                                 </Col>
                             </Row>
                             <Row className="form-group">
-                                <Col md={{size: 6, offset:2}}>
+                                <Col md={{size: 6, offset: 2}}>
                                     <div className="form-check">
                                         <Label check>
                                             <Control.checkbox model=".agree" name="agree"
@@ -103,7 +103,7 @@ class Contact extends Component {
                                         </Label>
                                     </div>
                                 </Col>
-                                <Col md={{size: 3, offset:1}}>
+                                <Col md={{size: 3, offset: 1}}>
                                     <Control.select model=".contactType" name="contactType"
                                                     className="form-control">
                                         <option>Tel.</option>
@@ -112,14 +112,15 @@ class Contact extends Component {
                                 </Col>
                             </Row>
                             <Row className="form-group">
-                                <Label htmlFor="feedback" md={2}>Your Feedback</Label>
+                                <Label htmlFor="message" md={2}>Your Feedback</Label>
                                 <Col md={10}>
-                                    <Control.textarea model=".message" id="message" name="message" rows="12"
-                                                      className="form-control"/>
+                                    <Control.textarea model=".message" id="message" name="message"
+                                                      rows="12"
+                                                      className="form-control" />
                                 </Col>
                             </Row>
                             <Row className="form-group">
-                                <Col md={{size: 10, offset:2}}>
+                                <Col md={{size:10, offset: 2}}>
                                     <Button type="submit" color="primary">
                                         Send Feedback
                                     </Button>
