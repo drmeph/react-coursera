@@ -1,16 +1,19 @@
 import React, {Component} from 'react';
 import Menu from "./MenuComponent";
-import { DISHES } from "../shared/dishes";
-import { COMMENTS } from "../shared/comments";
-import { LEADERS } from "../shared/leaders";
-import { PROMOTIONS } from "../shared/promotions";
 import Header from "./HeaderComoponent";
 import Footer from "./FooterComponent";
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import Home from "./HomeComponent";
 import Contact from "./ContactComponent";
 import DishDetail from "./DishDetailComponent";
 import About from "./AboutComponent";
+import { connect } from 'react-redux';
+
+const mapStateToProps = state => {
+    return {
+
+    }
+}
 
 class MainComponent extends Component {
 
@@ -18,13 +21,11 @@ class MainComponent extends Component {
         super(props);
 
         this.state = {
-            dishes: DISHES,
-            comments: COMMENTS,
-            promotions: PROMOTIONS,
-            leaders: LEADERS,
-            selectedDish: null
+
         };
     }
+
+
 
     render() {
 

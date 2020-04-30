@@ -28,6 +28,8 @@
     "minimist": ">=1.2.3"
   },
   "dependencies": {
-    "create-react-app": "^3.4.1"
+    "create-react-app": "^3.4.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
   }
 }
