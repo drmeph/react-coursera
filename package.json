@@ -24,8 +24,7 @@
   },
   "homepage": "https://github.com/drmeph/react-coursera#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4",
-    "minimist": ">=1.2.3"
+    "lite-server": "^2.5.4"
   },
   "dependencies": {
     "create-react-app": "^3.4.1"
